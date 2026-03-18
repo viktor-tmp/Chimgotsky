@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_dark"
+    android:padding="20dp">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_parrot"
+        android:layout_marginBottom="10dp"
+        android:contentDescription="Chimgotsky Parrot Mascot" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="CHIMGOTSKY ENGINE"
+        android:textColor="@color/primary_teal"
+        android:textStyle="bold"
+        android:letterSpacing="0.1"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@color/surface_dark"
+        android:gravity="center"
+        android:padding="15dp"
+        android:text="Tap to generate..."
+        android:textColor="@color/text_primary"
+        android:textSize="20sp"
+        android:fontFamily="monospace" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3">
+        <Button android:id="@+id/btnWordN"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="NOUN"
+            android:backgroundTint="@color/surface_dark" android:textColor="@color/accent_gold" />
+        <Button android:id="@+id/btnWordV"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="VERB"
+            android:backgroundTint="@color/surface_dark" android:textColor="@color/accent_gold"
+            android:layout_marginHorizontal="5dp"/>
+        <Button android:id="@+id/btnWordA"
+            android:layout_width="0dp" android:layout_height="wrap_content"
+            android:layout_weight="1" android:text="ADJ"
+            android:backgroundTint="@color/surface_dark" android:textColor="@color/accent_gold" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnGenerateSentence"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:text="GENERATE SENTENCE"
+        android:backgroundTint="@color/primary_teal"
+        android:textColor="@color/bg_dark"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="HISTORY LOG"
+        android:textColor="@color/text_secondary"
+        android:textSize="12sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:background="@color/surface_dark">
+        <TextView
+            android:id="@+id/tvHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp" />
+    </ScrollView>
+</LinearLayout>
