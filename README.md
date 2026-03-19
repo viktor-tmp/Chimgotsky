@@ -35,7 +35,6 @@ Engine giải mã các chuỗi mẫu (Pattern) để tạo ra câu. Bạn có th
 | **DET** | Định từ (Determiner) | *the, a, some, every* |
 | **PREP** | Giới từ (Preposition) | *in, on, with, under* |
 
-Xuất sang Trang tính
 
 > **Ví dụ:** `"DET ADJ N V PREP DET N"` **Kết quả:** `"The dialectical system works with every theory."`
 
